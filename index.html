@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Momotoro</title>
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <script type="text/x-handlebars">
+    <h2>Welcome to Ember.js</h2>
+
+    {{outlet}}
+  </script>
+
+  <script type="text/x-handlebars" id="index">
+    {{hello}}
+    <ul>
+    {{#each item in model}}
+      <li>{{item}}</li>
+    {{/each}}
+    </ul>
+  </script>
+
+  <script src="assets/js/libs/jquery-1.10.2.js"></script>
+  <script src="assets/js/libs/handlebars-v1.3.0.js"></script>
+  <script src="assets/js/libs/ember-1.8.1.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
